@@ -132,27 +132,32 @@ export default function HomePage() {
   };
 
   const handlePayout = () => {
-    if (!finalValue || !scenario || (scenario !== 2 && scenario !== 3)) return;
+  if (!finalValue) return;
 
-    const profit = finalValue - LOAN;
-    const amount = Math.min(25, Math.max(0, profit)); // capped op $25, niet negatief
+  const profit = finalValue - LOAN;
+  const transactionFee = profit > 25 ? profit - 25 : 0;
+  const netAmount = profit - transactionFee;
 
-    const subject = encodeURIComponent(
-      `Daan Bitcoin Game – scenario ${scenario}`
-    );
-    const body = encodeURIComponent(
-      `Hey Pepijn,\n\nLooks like I earned $${formatMoney(
-        amount
-      )} in scenario ${scenario}.\n\nFinal value: $${formatMoney(
-        finalValue
-      )}\nProfit: $${formatMoney(
-        profit
-      )}\n\nTime to pay up! 💰\n\n– Daan`
-    );
+  const subject = encodeURIComponent("Daan Bitcoin Game – payout summary");
+  const body = encodeURIComponent(
+    `Hey Pepijn,
 
-    const mailto = `mailto:pepijn@occamdx.com?subject=${subject}&body=${body}`;
-    window.location.href = mailto;
-  };
+Here’s the trade result:
+
+Final value: $${formatMoney(finalValue)}
+Profit: $${formatMoney(profit)}
+Transaction fee: $${formatMoney(transactionFee)}
+Net amount owed: $${formatMoney(netAmount > 0 ? netAmount : 0)}
+
+Time to pay up! 💰
+
+– Daan`
+  );
+
+  const mailto = `mailto:pepijn@occamdx.com?subject=${subject}&body=${body}`;
+  window.location.href = mailto;
+};
+
 
   // UI helpers voor knoppen
   const renderButtons = () => {

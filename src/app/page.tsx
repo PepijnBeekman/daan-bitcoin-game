@@ -249,7 +249,7 @@ Time to pay up! 💰
           Daan&apos;s Birthday Bitcoin Minigame
         </h1>
         <p className="text-sm text-center text-slate-300 mb-6">
-          Happy birthday Daan!!!! Hey, we love you but we refuse to just give you money for your birthday. That's just not our love language. But ok, since it's your birthday so I guess we can lend you some investment budget to *earn* your gift. Buy low, sell high! Hint: mind the transaction fees!
+          Happy birthday Daan!!!! Hey, we love you but we refuse to just give you money for your birthday. That's just not our love language. But ok, since it's your birthday we guess we can lend you some investment budget to *earn* your gift. So buy low, sell high! Hint: mind the transaction fees!
         </p>
 
         <div className="mb-4 flex flex-col items-center">

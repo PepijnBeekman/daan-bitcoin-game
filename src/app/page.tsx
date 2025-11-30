@@ -249,8 +249,7 @@ Time to pay up! 💰
           Daan&apos;s Birthday Bitcoin Minigame
         </h1>
         <p className="text-sm text-center text-slate-300 mb-6">
-          Daan, we love you but we refuse to just give you money for your birthday. That's just not our  love language. But ok, it's your birthday so I guess we can lend you some investment budget to *earn* your gift. You get a <span className="font-semibold">$1000</span> loan to buy Bitcoin. A <span className="font-semibold">$20</span> fee is taken when
-          you buy; the sell transaction fee varies. 
+          Daan, we love you but we refuse to just give you money for your birthday. That's just not our  love language. But ok, it's your birthday so I guess we can lend you some investment budget to *earn* your gift. Buy low, sell high! Hint: mind the transaction fees!
         </p>
 
         <div className="mb-4 flex flex-col items-center">

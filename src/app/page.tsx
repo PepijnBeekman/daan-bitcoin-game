@@ -234,16 +234,18 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-100">
+    <main
+      className="min-h-screen flex items-center justify-center text-slate-100 bg-cover bg-center"
+      style={{ backgroundImage: "url('/bkg.png')" }}
+    >
+
       <div className="max-w-xl w-full mx-4 p-6 rounded-2xl border border-slate-800 bg-slate-900/70 shadow-lg">
         <h1 className="text-2xl font-bold mb-2 text-center">
-          Daan&apos;s Bitcoin Game
+          Daan&apos;s Birthday Bitcoin Minigame
         </h1>
         <p className="text-sm text-center text-slate-300 mb-6">
-          You get a <span className="font-semibold">$1000</span> loan to play
-          with. A <span className="font-semibold">$20</span> fee is taken when
-          you buy. Try to time the market. Good luck beating an uncle who knows
-          math.
+          Daan, we love you but we refuse to just give you money for your birthday. That's just not our  love language. But ok, it's your birthday so I guess we can lend you some investment budget to *earn* your gift. You get a <span className="font-semibold">$1000</span> loan to buy Bitcoin. A <span className="font-semibold">$20</span> fee is taken when
+          you buy; the sell transaction fee varies. 
         </p>
 
         <div className="mb-4 flex flex-col items-center">
